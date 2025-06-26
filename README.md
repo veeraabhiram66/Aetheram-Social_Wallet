@@ -124,14 +124,15 @@ npm run build
 - **Smart Contracts:** Solidity, Hardhat
 - **Design:** Modular architecture, scalable API + DB layers, relayer separation
 
-## 🏆 Awards Potential
+## 🚀 Project Highlights  
 
-This project demonstrates:
-- **🥇 Innovation**: Unique gasless social recovery system
-- **🥇 Technical Excellence**: Production-ready, secure, tested
-- **🥇 User Experience**: Beautiful, intuitive, responsive
-- **🥇 Completeness**: Full-stack implementation with documentation
-- **🥇 BlockDAG Integration**: Native testnet deployment
+This project demonstrates:  
+- 💡 **Innovation:** Gasless wallet with social recovery and meta-transaction support  
+- 🔧 **Technical Strength:** Secure, production-ready Node.js + Express.js backend with REST APIs and SQL integration  
+- 🏗️ **System Design:** Modular architecture separating API, database, and relayer layers for scalability  
+- 🛡️ **Security:** Rate limiting, input validation, CORS, replay protection, and nonce management  
+- 📄 **Completeness:** Full-stack solution with documentation and test coverage  
+
 
 ---
 
