@@ -1,0 +1,37 @@
+{
+  "name": "blockdag-smart-wallet",
+  "version": "1.0.0",
+  "description": "BlockDAG Smart Wallet with Social Recovery and Gasless Transactions",
+  "main": "generate-test-data.js",  "scripts": {
+    "start": "node start-system.js",
+    "start:backend": "cd backend ; npm start",
+    "start:frontend": "cd frontend ; npm start",
+    "start:contracts": "cd contracts ; npx hardhat node",    "test:rpc": "node test-rpc-connection.js",
+    "test:contracts": "node test-contracts-verification.js",
+    "test:backend": "node test-backend-connectivity.js",
+    "test:system": "npm run test:rpc ; npm run test:contracts ; npm run test:backend",
+    "health": "node health-check.js",
+    "generate-test-data": "node generate-test-data.js",
+    "compile": "cd contracts ; npx hardhat compile",
+    "deploy": "cd contracts ; npx hardhat run scripts/deploy.js --network blockdag",
+    "setup": "npm install ; cd backend ; npm install ; cd ../frontend ; npm install ; cd ../contracts ; npm install"
+  },
+  "keywords": [
+    "blockchain",
+    "smart-wallet",
+    "gasless",
+    "social-recovery",
+    "blockdag"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

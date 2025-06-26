@@ -1,0 +1,4337 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin\\contracts\\access\\Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin\\contracts\\access\\Ownable.sol:38"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/interfaces/IERC5267.sol:IERC5267": {
+        "src": "@openzeppelin\\contracts\\interfaces\\IERC5267.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "eip712Domain()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin\\contracts\\utils\\Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/ReentrancyGuard.sol:ReentrancyGuard": {
+        "src": "@openzeppelin\\contracts\\utils\\ReentrancyGuard.sol:25",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ReentrancyGuard",
+            "src": "@openzeppelin\\contracts\\utils\\ReentrancyGuard.sol:47"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "@openzeppelin\\contracts\\utils\\ReentrancyGuard.sol:40"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/ShortStrings.sol:ShortStrings": {
+        "src": "@openzeppelin\\contracts\\utils\\ShortStrings.sol:40",
+        "version": {
+          "withMetadata": "78085c025d14649de0566d81e3bca51156f778566353fa2e3ad3f63ef968ae06",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin\\contracts\\utils\\Strings.sol:13",
+        "version": {
+          "withMetadata": "2cd340fd9928cc45e748c919b1fb5db1e04234af746a8fc1ef078e2973931bde",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/cryptography/ECDSA.sol:ECDSA": {
+        "src": "@openzeppelin\\contracts\\utils\\cryptography\\ECDSA.sol:12",
+        "version": {
+          "withMetadata": "f6322c2774d53a1a8a6ae29b52f5b53483331d616a0ade593f8241f4ab0a2631",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/cryptography/EIP712.sol:EIP712": {
+        "src": "@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol:34",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC5267.sol:IERC5267"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/utils/ShortStrings.sol:ShortStrings",
+          "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol:MessageHashUtils"
+        ],
+        "methods": [
+          "eip712Domain()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "EIP712",
+            "src": "@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol:68"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_nameFallback",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "EIP712",
+              "src": "@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol:52"
+            },
+            {
+              "label": "_versionFallback",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "EIP712",
+              "src": "@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol:54"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol:MessageHashUtils": {
+        "src": "@openzeppelin\\contracts\\utils\\cryptography\\MessageHashUtils.sol:15",
+        "version": {
+          "withMetadata": "b35b9194a754a702fd63dd14afa84262eed254501b398138052e78d0c91f5ec3",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165": {
+        "src": "@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SignedMath.sol:11",
+        "version": {
+          "withMetadata": "c9cad88b9f3a79cbcda67dab791e826b94e35fa2e5aa7fa5cdd8a6021ffb5e21",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/EnhancedSmartWallet.sol:EnhancedSmartWallet": {
+        "src": "contracts\\EnhancedSmartWallet.sol:15",
+        "version": {
+          "withMetadata": "81dfe5eb1e072149380626fa092ff91fcf3116788587896edcc0d3c49a6bce95",
+          "withoutMetadata": "8a06a838908a74d1ec661ac2baa3df9169588b7c037fed1ac552d25c14cdc1bf",
+          "linkedWithoutMetadata": "8a06a838908a74d1ec661ac2baa3df9169588b7c037fed1ac552d25c14cdc1bf"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context",
+          "@openzeppelin/contracts/utils/ReentrancyGuard.sol:ReentrancyGuard",
+          "@openzeppelin/contracts/utils/cryptography/EIP712.sol:EIP712",
+          "@openzeppelin/contracts/interfaces/IERC5267.sol:IERC5267"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/utils/cryptography/ECDSA.sol:ECDSA"
+        ],
+        "methods": [
+          "(address)",
+          "()",
+          "execute(address,uint256,bytes)",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getCurrentNonce()",
+          "getBalance()",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "setGuardianThreshold(uint256)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "executeRecovery()",
+          "cancelRecovery()",
+          "isGuardian(address)",
+          "getRecoveryStatus()",
+          "supportsInterface(bytes4)",
+          "emergencyWithdraw(address payable)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "EnhancedSmartWallet",
+            "src": "contracts\\EnhancedSmartWallet.sol:65"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_nameFallback",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "EIP712",
+              "src": "@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol:52"
+            },
+            {
+              "label": "_versionFallback",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "EIP712",
+              "src": "@openzeppelin\\contracts\\utils\\cryptography\\EIP712.sol:54"
+            },
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "@openzeppelin\\contracts\\utils\\ReentrancyGuard.sol:40"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            },
+            {
+              "label": "_nonce",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "EnhancedSmartWallet",
+              "src": "contracts\\EnhancedSmartWallet.sol:26"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "EnhancedSmartWallet",
+              "src": "contracts\\EnhancedSmartWallet.sol:27"
+            },
+            {
+              "label": "approvedRecovery",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "EnhancedSmartWallet",
+              "src": "contracts\\EnhancedSmartWallet.sol:28"
+            },
+            {
+              "label": "guardianThreshold",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "EnhancedSmartWallet",
+              "src": "contracts\\EnhancedSmartWallet.sol:29"
+            },
+            {
+              "label": "pendingOwner",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_address",
+              "contract": "EnhancedSmartWallet",
+              "src": "contracts\\EnhancedSmartWallet.sol:30"
+            },
+            {
+              "label": "recoveryInitiatedAt",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256",
+              "contract": "EnhancedSmartWallet",
+              "src": "contracts\\EnhancedSmartWallet.sol:31"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWalletFactory.sol:SmartWalletFactory": {
+        "src": "contracts\\SmartWalletFactory.sol:10",
+        "version": {
+          "withMetadata": "4ffdc5f0365b404ae0f5e775d194e970fb66057e4bd4d6f858b62ba618bf4c26",
+          "withoutMetadata": "01964ec0f04a6f23237b0b41a1b8d9b1cbf583d2782edbdc39d93432d96b12c7",
+          "linkedWithoutMetadata": "01964ec0f04a6f23237b0b41a1b8d9b1cbf583d2782edbdc39d93432d96b12c7"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createWallet(address)",
+          "getWalletAddress(address)",
+          "predictWalletAddress(address,bytes32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "walletForOwner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_address)",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "contracts/SimpleWallet.sol:SimpleWallet": {
+        "src": "contracts\\SimpleWallet.sol:4",
+        "version": {
+          "withMetadata": "ef6a54fe8473913475d69be6517d14c1e227ddcdac072f7c686999f03b07797a",
+          "withoutMetadata": "57eeadaad5f380e7d914ea78945b144745924d7b218a5af5129d611f92d897ce",
+          "linkedWithoutMetadata": "57eeadaad5f380e7d914ea78945b144745924d7b218a5af5129d611f92d897ce"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "execute(address,uint256,bytes)",
+          "transferOwnership(address)",
+          "getCurrentNonce()",
+          "()",
+          "getBalance()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SimpleWallet",
+            "src": "contracts\\SimpleWallet.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SimpleWallet",
+              "src": "contracts\\SimpleWallet.sol:5"
+            },
+            {
+              "label": "nonce",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "SimpleWallet",
+              "src": "contracts\\SimpleWallet.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin\\contracts\\access\\Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin\\contracts\\access\\Ownable.sol:38"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/proxy/Clones.sol:Clones": {
+        "src": "@openzeppelin\\contracts\\proxy\\Clones.sol:20",
+        "version": {
+          "withMetadata": "2c507dbe9cd4a7826d3157319f799a5fb38498eb195650899660da79b9349053",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Create2.sol:Create2",
+          "@openzeppelin/contracts/utils/Errors.sol:Errors"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin\\contracts\\utils\\Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Create2.sol:Create2": {
+        "src": "@openzeppelin\\contracts\\utils\\Create2.sol:17",
+        "version": {
+          "withMetadata": "18ac128fb998abfc9a2cf5200537a626b8945567807aabcb56fadae641ec546d",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Errors.sol:Errors"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Errors.sol:Errors": {
+        "src": "@openzeppelin\\contracts\\utils\\Errors.sol:14",
+        "version": {
+          "withMetadata": "682ac240e338d69c457be0c869361dfff04b6de9f5875b9ff769f7cc2aa37ed0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "d8577ae9c6fdf1bf29d9faf2fbf6ffbfabf6f1fd8d52640b0bccc923ab7ecfc5",
+          "withoutMetadata": "b8f7f4d8f7781c478b7aed387d1f045335e68745cb3ffcaff6c874b1f9e60b12",
+          "linkedWithoutMetadata": "b8f7f4d8f7781c478b7aed387d1f045335e68745cb3ffcaff6c874b1f9e60b12"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "initialize(address,address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "setRecoveryThreshold(uint256)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "cancelRecovery()",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getGuardians()",
+          "getGuardianCount()",
+          "isGuardian(address)",
+          "getRecoveryInfo()",
+          "hasApprovedRecovery(address)",
+          "transferOwnership(address)",
+          "validateMetaTransactionSignature(address,uint256,bytes,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:48"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:9"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:10"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:7"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)5683_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:8"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)6037_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:24"
+            },
+            {
+              "label": "nonces",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:31"
+            },
+            {
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_bytes32",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:33"
+            },
+            {
+              "label": "initialized",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_bool",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:36"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)5683_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)5312_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)6037_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "executed",
+                  "type": "t_bool",
+                  "offset": 1,
+                  "slot": "4"
+                },
+                {
+                  "label": "expiresAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_struct(Set)5312_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWalletFactory.sol:SmartWalletFactory": {
+        "src": "contracts\\SmartWalletFactory.sol:13",
+        "version": {
+          "withMetadata": "869a387b3cd58f1afbdebef238649d38b78b84d64d7c814b14bfee697d0ea9d8",
+          "withoutMetadata": "0c222efc4bf742dff63a6145cf432fac3d1904d42a422c4c0b2ff80e971a3541",
+          "linkedWithoutMetadata": "0c222efc4bf742dff63a6145cf432fac3d1904d42a422c4c0b2ff80e971a3541"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/proxy/Clones.sol:Clones"
+        ],
+        "methods": [
+          "(address)",
+          "deployWallet(address[],bytes32)",
+          "predictWalletAddress(address,bytes32)",
+          "getUserWallets(address)",
+          "getTotalWallets()",
+          "isWalletValid(address)",
+          "setDeploymentFee(uint256)",
+          "setDeploymentPaused(bool)",
+          "withdrawFees(address payable)",
+          "getFactoryStats()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWalletFactory",
+            "src": "contracts\\SmartWalletFactory.sol:50"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "implementation",
+            "src": "contracts\\SmartWalletFactory.sol:17"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "deploymentFee",
+            "src": "contracts\\SmartWalletFactory.sol:27"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "deploymentPaused",
+            "src": "contracts\\SmartWalletFactory.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            },
+            {
+              "label": "userWallets",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:20"
+            },
+            {
+              "label": "walletToOwner",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_address)",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:21"
+            },
+            {
+              "label": "isValidWallet",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:22"
+            },
+            {
+              "label": "allWallets",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:24"
+            },
+            {
+              "label": "deploymentFee",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:27"
+            },
+            {
+              "label": "deploymentPaused",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_bool",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:28"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin\\contracts\\access\\Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin\\contracts\\access\\Ownable.sol:38"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/proxy/Clones.sol:Clones": {
+        "src": "@openzeppelin\\contracts\\proxy\\Clones.sol:20",
+        "version": {
+          "withMetadata": "2c507dbe9cd4a7826d3157319f799a5fb38498eb195650899660da79b9349053",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Create2.sol:Create2",
+          "@openzeppelin/contracts/utils/Errors.sol:Errors"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin\\contracts\\utils\\Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Create2.sol:Create2": {
+        "src": "@openzeppelin\\contracts\\utils\\Create2.sol:17",
+        "version": {
+          "withMetadata": "18ac128fb998abfc9a2cf5200537a626b8945567807aabcb56fadae641ec546d",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Errors.sol:Errors"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Errors.sol:Errors": {
+        "src": "@openzeppelin\\contracts\\utils\\Errors.sol:14",
+        "version": {
+          "withMetadata": "682ac240e338d69c457be0c869361dfff04b6de9f5875b9ff769f7cc2aa37ed0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "098c2e1d1720aa2352f7b9c54bd438a804fd3e12c2a2b295af9a50666fa1b657",
+          "withoutMetadata": "c78b87d5b52bac2d6c8e9758a01fd91825a958950e874e7e9433d6a0cc9a00d3",
+          "linkedWithoutMetadata": "c78b87d5b52bac2d6c8e9758a01fd91825a958950e874e7e9433d6a0cc9a00d3"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "initialize(address,address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "setRecoveryThreshold(uint256)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "cancelRecovery()",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getGuardians()",
+          "getGuardianCount()",
+          "isGuardian(address)",
+          "getRecoveryInfo()",
+          "hasApprovedRecovery(address)",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:48"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:9"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:10"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:7"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)5683_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:8"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)6037_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:24"
+            },
+            {
+              "label": "nonces",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:31"
+            },
+            {
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_bytes32",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:33"
+            },
+            {
+              "label": "initialized",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_bool",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:36"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)5683_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)5312_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)6037_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "executed",
+                  "type": "t_bool",
+                  "offset": 1,
+                  "slot": "4"
+                },
+                {
+                  "label": "expiresAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_struct(Set)5312_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWalletFactory.sol:SmartWalletFactory": {
+        "src": "contracts\\SmartWalletFactory.sol:13",
+        "version": {
+          "withMetadata": "e649913b847c97e9265cce98b189c3730a57060fc752815cc2bed5dd9a8cd489",
+          "withoutMetadata": "0c222efc4bf742dff63a6145cf432fac3d1904d42a422c4c0b2ff80e971a3541",
+          "linkedWithoutMetadata": "0c222efc4bf742dff63a6145cf432fac3d1904d42a422c4c0b2ff80e971a3541"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/proxy/Clones.sol:Clones"
+        ],
+        "methods": [
+          "(address)",
+          "deployWallet(address[],bytes32)",
+          "predictWalletAddress(address,bytes32)",
+          "getUserWallets(address)",
+          "getTotalWallets()",
+          "isWalletValid(address)",
+          "setDeploymentFee(uint256)",
+          "setDeploymentPaused(bool)",
+          "withdrawFees(address payable)",
+          "getFactoryStats()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWalletFactory",
+            "src": "contracts\\SmartWalletFactory.sol:50"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "implementation",
+            "src": "contracts\\SmartWalletFactory.sol:17"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "deploymentFee",
+            "src": "contracts\\SmartWalletFactory.sol:27"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "deploymentPaused",
+            "src": "contracts\\SmartWalletFactory.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:21"
+            },
+            {
+              "label": "userWallets",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:20"
+            },
+            {
+              "label": "walletToOwner",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_address)",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:21"
+            },
+            {
+              "label": "isValidWallet",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:22"
+            },
+            {
+              "label": "allWallets",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:24"
+            },
+            {
+              "label": "deploymentFee",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:27"
+            },
+            {
+              "label": "deploymentPaused",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_bool",
+              "contract": "SmartWalletFactory",
+              "src": "contracts\\SmartWalletFactory.sol:28"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "702f94b46ce8a837c4e7eaed3d03b3fcd91ed41cbe1c655d631eb5e61ecd72a5",
+          "withoutMetadata": "3f76b97750fbca0239aef31f44771c52dbe4bc23a60442f735b11585ddbb0152",
+          "linkedWithoutMetadata": "3f76b97750fbca0239aef31f44771c52dbe4bc23a60442f735b11585ddbb0152"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "setRecoveryThreshold(uint256)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "cancelRecovery()",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getGuardians()",
+          "getGuardianCount()",
+          "isGuardian(address)",
+          "getRecoveryInfo()",
+          "hasApprovedRecovery(address)",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:47"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:9"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:10"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:7"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)4985_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:8"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)5339_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:24"
+            },
+            {
+              "label": "nonces",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:33"
+            },
+            {
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_bytes32",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)4985_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)4614_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)5339_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "executed",
+                  "type": "t_bool",
+                  "offset": 1,
+                  "slot": "4"
+                },
+                {
+                  "label": "expiresAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_struct(Set)4614_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "118d411997e0f0733ce5b727d05a7ff2a5ea37e897ddd7c88c34372b4a0a21d9",
+          "withoutMetadata": "b221ec0cd28e632002d585b993f761565efa9ee12de4f10cbbf173cbd841ad70",
+          "linkedWithoutMetadata": "b221ec0cd28e632002d585b993f761565efa9ee12de4f10cbbf173cbd841ad70"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getGuardians()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:45"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)4985_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:11"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:12"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)5329_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:22"
+            },
+            {
+              "label": "nonces",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:31"
+            },
+            {
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_bytes32",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:33"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)4985_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)4614_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)5329_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Set)4614_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "9838f18ff251b6cbfaea87c10d1142d6b835822fdb5b3171f6e1721ee409a2e6",
+          "withoutMetadata": "d17c8eafd60fd13035acb695c1cada993223416b6d35cd943a99013e771a7cb2",
+          "linkedWithoutMetadata": "d17c8eafd60fd13035acb695c1cada993223416b6d35cd943a99013e771a7cb2"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getGuardians()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:47"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)4985_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:11"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:12"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)5329_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:22"
+            },
+            {
+              "label": "nonces",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:31"
+            },
+            {
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_bytes32",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)4985_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)4614_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)5329_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Set)4614_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "30be8759d621c58efe8017cb7502b5d4a136ffbb3d637b42f4990263d711815e",
+          "withoutMetadata": "366640f7300e2dbc8b89320ce2fd296f477c6ee566dab9e00746f22be2e1236c",
+          "linkedWithoutMetadata": "366640f7300e2dbc8b89320ce2fd296f477c6ee566dab9e00746f22be2e1236c"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getGuardians()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:49"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)4985_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:11"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:12"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)5329_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:22"
+            },
+            {
+              "label": "nonces",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:31"
+            },
+            {
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_bytes32",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)4985_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)4614_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)5329_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Set)4614_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "b95907108f4332528ccde6a50c8406dffbe8f57989dfeafdda8a086018e77a8d",
+          "withoutMetadata": "db2548442658f74bce1940cb4f47e154e0a341949c69405a4f1c8ce8e912d060",
+          "linkedWithoutMetadata": "db2548442658f74bce1940cb4f47e154e0a341949c69405a4f1c8ce8e912d060"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "executeMetaTransaction(address,uint256,bytes,uint256,bytes)",
+          "getGuardians()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:49"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)4985_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:11"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:12"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)5329_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:22"
+            },
+            {
+              "label": "nonces",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:31"
+            },
+            {
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_bytes32",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)4985_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)4614_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)5329_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Set)4614_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    },
+    {
+      "@openzeppelin/contracts/utils/Arrays.sol:Arrays": {
+        "src": "@openzeppelin\\contracts\\utils\\Arrays.sol:15",
+        "version": {
+          "withMetadata": "cb8f6eef90be43d87b0430a4145179fc3c13875a8871b90fb2d62d36ea108cf7",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation",
+          "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot",
+          "@openzeppelin/contracts/utils/Comparators.sol:Comparators",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Comparators.sol:Comparators": {
+        "src": "@openzeppelin\\contracts\\utils\\Comparators.sol:11",
+        "version": {
+          "withMetadata": "cf4af2635c49846a25904195ff96f25d78a9276ff2147fb21dd701061025e83a",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/Panic.sol:Panic": {
+        "src": "@openzeppelin\\contracts\\utils\\Panic.sol:26",
+        "version": {
+          "withMetadata": "84fe8d580f7e0ca9812f731066dd85867ff3944d4a3a9c934935b9d46791b794",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/SlotDerivation.sol:SlotDerivation": {
+        "src": "@openzeppelin\\contracts\\utils\\SlotDerivation.sol:41",
+        "version": {
+          "withMetadata": "80c5218c9db79e9f71439bbe32b45a7bbd353cadf7eb1c605a82c201ea26ab97",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "80b04f343e6b8d1d9dc6bf1aa468bc7f4ed3b5aea26a73586e6b4a1380f3a6bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:12",
+        "version": {
+          "withMetadata": "0f3aa4578c5323fa2b954b796def484296ba7dee7b285d932608b9b6a561e8a0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast",
+          "@openzeppelin/contracts/utils/math/Math.sol:Math",
+          "@openzeppelin/contracts/utils/Panic.sol:Panic"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeCast.sol:19",
+        "version": {
+          "withMetadata": "8180390644542469a86e37663a95d3f7563eb84da65b95d132ff508118b17779",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet": {
+        "src": "@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol:44",
+        "version": {
+          "withMetadata": "bf893686c0e586b25f8013ebb47d438f9bc4fa65094e32652178524270221456",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Arrays.sol:Arrays"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      },
+      "contracts/SmartWallet.sol:SmartWallet": {
+        "src": "contracts\\SmartWallet.sol:6",
+        "version": {
+          "withMetadata": "e10c39bc1b9512a7b7c184e914e780af0f4b6413d9926e3ff4b986973e892ede",
+          "withoutMetadata": "4b98c724bc6c64dad1992ec62f4515128d0ac4cf4692d5bfc8f852a513c9bfbe",
+          "linkedWithoutMetadata": "4b98c724bc6c64dad1992ec62f4515128d0ac4cf4692d5bfc8f852a513c9bfbe"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/structs/EnumerableSet.sol:EnumerableSet"
+        ],
+        "methods": [
+          "(address[])",
+          "executeTransaction(address,uint256,bytes)",
+          "addGuardian(address)",
+          "removeGuardian(address)",
+          "initiateRecovery(address)",
+          "approveRecovery()",
+          "finalizeRecovery()",
+          "getGuardians()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SmartWallet",
+            "src": "contracts\\SmartWallet.sol:41"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "recoveryDelay",
+            "src": "contracts\\SmartWallet.sol:11"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "requiredApprovals",
+            "src": "contracts\\SmartWallet.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:9"
+            },
+            {
+              "label": "guardians",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_struct(AddressSet)4985_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:10"
+            },
+            {
+              "label": "recoveryDelay",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:11"
+            },
+            {
+              "label": "requiredApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:12"
+            },
+            {
+              "label": "recoveryRequest",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(RecoveryRequest)5329_storage",
+              "contract": "SmartWallet",
+              "src": "contracts\\SmartWallet.sol:22"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(AddressSet)4985_storage": {
+              "label": "struct EnumerableSet.AddressSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)4614_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(RecoveryRequest)5329_storage": {
+              "label": "struct SmartWallet.RecoveryRequest",
+              "members": [
+                {
+                  "label": "newOwner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "initiatedAt",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "approvals",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "approvedBy",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "exists",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Set)4614_storage": {
+              "label": "struct EnumerableSet.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "_positions",
+                  "type": "t_mapping(t_bytes32,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.24"
+      }
+    }
+  ]
+}

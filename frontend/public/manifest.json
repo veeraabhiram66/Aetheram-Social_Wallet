@@ -1,0 +1,45 @@
+{
+  "name": "BlockDAG Smart Wallet",
+  "short_name": "BlockDAG Wallet",
+  "description": "Gasless smart wallet with social recovery for BlockDAG ecosystem",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3B82F6",
+  "background_color": "#FFFFFF",
+  "orientation": "portrait",  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["finance", "utilities"],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot2.png", 
+      "type": "image/png",
+      "sizes": "750x1334",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Send Transaction",
+      "url": "/?action=send",
+      "description": "Send a gasless transaction"
+    },
+    {
+      "name": "Guardian Dashboard",
+      "url": "/?tab=guardians",
+      "description": "Manage social recovery guardians"
+    }
+  ],
+  "lang": "en",
+  "dir": "ltr"
+}

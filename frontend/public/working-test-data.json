@@ -1,0 +1,125 @@
+{
+  "version": "2.0",
+  "description": "Working test data for BlockDAG Smart Wallet - Error-free and validated",
+  "network": {
+    "name": "BlockDAG Primordial Testnet",
+    "chainId": 1043,
+    "rpcUrl": "https://rpc-testnet.bdagscan.com"
+  },
+  "testWallet": {
+    "smartWalletAddress": "0xdC10A6aCdA956363300f8a63C7CDEdc74100Fad8",
+    "ownerAddress": "0x484eab4066d5631754C329Cc27FA6213ba038cc8",
+    "isDeployed": true,
+    "hasBalance": true
+  },
+  "validRecipients": [
+    {
+      "name": "Test Recipient 1",
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "description": "First guardian address"
+    },
+    {
+      "name": "Test Recipient 2", 
+      "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "description": "Second guardian address"
+    },
+    {
+      "name": "Test Recipient 3",
+      "address": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+      "description": "Third guardian address"
+    }
+  ],
+  "testTransactions": [
+    {
+      "id": "tx-001",
+      "name": "💸 Send 0.001 BDAG (Minimal)",
+      "description": "Smallest safe test amount",
+      "to": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "value": "0.001",
+      "valueWei": "1000000000000000",
+      "data": "0x",
+      "gasEstimate": "21000",
+      "category": "basic",
+      "validated": true
+    },
+    {
+      "id": "tx-002", 
+      "name": "💰 Send 0.01 BDAG (Small)",
+      "description": "Small test transaction",
+      "to": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "value": "0.01",
+      "valueWei": "10000000000000000",
+      "data": "0x",
+      "gasEstimate": "21000",
+      "category": "basic",
+      "validated": true
+    },
+    {
+      "id": "tx-003",
+      "name": "🚀 Send 0.1 BDAG (Medium)",
+      "description": "Medium test transaction",
+      "to": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+      "value": "0.1",
+      "valueWei": "100000000000000000",
+      "data": "0x",
+      "gasEstimate": "21000",
+      "category": "medium",
+      "validated": true
+    },
+    {
+      "id": "tx-004",
+      "name": "📝 Send with Data (Contract Call)",
+      "description": "Transaction with custom data",
+      "to": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "value": "0.005",
+      "valueWei": "5000000000000000",
+      "data": "0xa9059cbb00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c80000000000000000000000000000000000000000000000000de0b6b3a7640000",
+      "gasEstimate": "65000",
+      "category": "advanced",
+      "validated": true,
+      "dataDescription": "ERC20 transfer simulation"
+    },
+    {
+      "id": "tx-005",
+      "name": "🔥 Zero Value Transaction",
+      "description": "Test transaction with no value transfer",
+      "to": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "value": "0",
+      "valueWei": "0",
+      "data": "0x",
+      "gasEstimate": "21000",
+      "category": "edge-case",
+      "validated": true
+    }
+  ],
+  "eip712Domain": {
+    "name": "SmartWallet",
+    "version": "1",
+    "chainId": 1043,
+    "verifyingContract": "0xdC10A6aCdA956363300f8a63C7CDEdc74100Fad8"
+  },
+  "eip712Types": {
+    "MetaTransaction": [
+      { "name": "to", "type": "address" },
+      { "name": "value", "type": "uint256" },
+      { "name": "data", "type": "bytes32" },
+      { "name": "nonce", "type": "uint256" }
+    ]
+  },
+  "nonceHandling": {
+    "strategy": "dynamic",
+    "description": "Nonce is fetched dynamically from backend",
+    "fetchEndpoint": "/api/nonce",
+    "cacheDuration": 0,
+    "autoIncrement": false
+  },
+  "validationRules": {
+    "addressFormat": "Must be valid Ethereum address (0x + 40 hex chars)",
+    "valueRange": "0 to 1000 BDAG maximum for testing",
+    "dataFormat": "Must start with 0x, even for empty data",
+    "nonceRange": "0 to 2^256-1"
+  },
+  "generated": "2025-06-17T00:00:00.000Z",
+  "lastTested": "2025-06-17T00:00:00.000Z",
+  "status": "validated"
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wallet Deployment - MetaMask</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .status {
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .success { background: rgba(76, 175, 80, 0.3); }
+        .error { background: rgba(244, 67, 54, 0.3); }
+        .warning { background: rgba(255, 193, 7, 0.3); }
+        .info { background: rgba(33, 150, 243, 0.3); }
+        
+        button {
+            background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        
+        button:disabled {
+            background: gray;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .wallet-info {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .address {
+            word-break: break-all;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+        }
+        
+        .pending-tx {
+            background: rgba(255, 193, 7, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Smart Wallet Deployment</h1>
+        
+        <div id="status" class="status info">
+            Click "Connect MetaMask" to start
+        </div>
+        
+        <div style="text-align: center;">
+            <button id="connectBtn" onclick="connectMetaMask()">Connect MetaMask</button>
+            <button id="deployBtn" onclick="deploySmartWallet()" disabled>Deploy Smart Wallet</button>
+            <button id="checkBtn" onclick="checkPendingDeployments()" disabled>Check Pending</button>
+        </div>
+        
+        <div id="walletInfo" class="wallet-info" style="display: none;">
+            <h3>👤 Connected Account:</h3>
+            <div id="connectedAccount" class="address"></div>
+            <h3>💰 Balance:</h3>
+            <div id="balance"></div>
+        </div>
+        
+        <div id="pendingTransactions" style="display: none;">
+            <h3>⏳ Pending Deployments:</h3>
+            <div id="pendingList"></div>
+        </div>
+        
+        <div id="deploymentResult" style="display: none;">
+            <h3>🎯 Deployment Result:</h3>
+            <div id="resultContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // BlockDAG network configuration
+        const BLOCKDAG_CONFIG = {
+            chainId: '0x1f91e', // 129118 in hex
+            chainName: 'BlockDAG',
+            nativeCurrency: {
+                name: 'BDAG',
+                symbol: 'BDAG',
+                decimals: 18
+            },
+            rpcUrls: ['https://rpc.primordial.bdagscan.com'],
+            blockExplorerUrls: ['https://primordial.bdagscan.com']
+        };
+        
+        const FACTORY_ADDRESS = '0x769AA5Ee4191c72a8e15aECc547A2045F8C788B7';
+        const FACTORY_ABI = [
+            "function deployWallet(address[] guardians, bytes32 salt) payable",
+            "function predictWalletAddress(address owner, bytes32 salt) view returns (address)",
+            "function deploymentFee() view returns (uint256)"
+        ];
+        
+        // Pending transactions from your previous attempts
+        const PENDING_DEPLOYMENTS = [
+            {
+                name: "Original Deployment",
+                txHash: "0xdff316a0762433cdc80507ac11c0e5ff12068d8294aa55ea9572ed0bae54cf17",
+                expectedWallet: "Unknown",
+                gasPrice: "66.0 gwei"
+            },
+            {
+                name: "Fast Deployment", 
+                txHash: "0xb580dde6b418473c80cece5f638f35872a9f2f562e314ca4bfb89b6516e8d504",
+                expectedWallet: "0x64A6Cab46716DbC7679671DCd78Cf636a2f9214f",
+                gasPrice: "100.0 gwei"
+            },
+            {
+                name: "Latest Deployment",
+                txHash: "0x8096c779ef6d768a48d4ff9060b1713e5e1cc86031e2d724879e3a02977a76b6",
+                expectedWallet: "0x183a6a2e7C15e7EDD712a397d5719d6ECe35CFF2",
+                gasPrice: "~75 gwei"
+            }
+        ];
+        
+        let web3Provider = null;
+        let signer = null;
+        
+        async function connectMetaMask() {
+            try {
+                if (typeof window.ethereum === 'undefined') {
+                    updateStatus('MetaMask not found! Please install MetaMask.', 'error');
+                    return;
+                }
+                
+                updateStatus('Connecting to MetaMask...', 'info');
+                
+                // Request account access
+                const accounts = await window.ethereum.request({ 
+                    method: 'eth_requestAccounts' 
+                });
+                
+                if (accounts.length === 0) {
+                    updateStatus('No accounts found. Please unlock MetaMask.', 'error');
+                    return;
+                }
+                
+                // Add/Switch to BlockDAG network
+                try {
+                    await window.ethereum.request({
+                        method: 'wallet_switchEthereumChain',
+                        params: [{ chainId: BLOCKDAG_CONFIG.chainId }],
+                    });
+                } catch (switchError) {
+                    if (switchError.code === 4902) {
+                        // Network not added, add it
+                        await window.ethereum.request({
+                            method: 'wallet_addEthereumChain',
+                            params: [BLOCKDAG_CONFIG],
+                        });
+                    } else {
+                        throw switchError;
+                    }
+                }
+                
+                // Initialize ethers provider
+                web3Provider = new ethers.providers.Web3Provider(window.ethereum);
+                signer = web3Provider.getSigner();
+                
+                const account = accounts[0];
+                const balance = await web3Provider.getBalance(account);
+                
+                document.getElementById('connectedAccount').textContent = account;
+                document.getElementById('balance').textContent = ethers.utils.formatEther(balance) + ' BDAG';
+                document.getElementById('walletInfo').style.display = 'block';
+                
+                updateStatus(`✅ Connected to ${account}`, 'success');
+                
+                document.getElementById('deployBtn').disabled = false;
+                document.getElementById('checkBtn').disabled = false;
+                document.getElementById('connectBtn').textContent = 'Connected ✅';
+                document.getElementById('connectBtn').disabled = true;
+                
+                // Show pending transactions
+                displayPendingTransactions();
+                
+            } catch (error) {
+                updateStatus(`Error connecting: ${error.message}`, 'error');
+            }
+        }
+        
+        async function deploySmartWallet() {
+            try {
+                updateStatus('Preparing smart wallet deployment...', 'info');
+                
+                const account = await signer.getAddress();
+                console.log('Deploying for account:', account);
+                
+                // Valid guardian addresses
+                const guardians = [
+                    "0xdb7eE2249F220C71a32e3Ae2B71293f687B01a80",
+                    "0x0000000000000000000000000000000000000001"
+                ];
+                
+                // Generate random salt
+                const randomSalt = Math.floor(Math.random() * 9999) + 1;
+                const saltString = `wallet_metamask_${account}_${randomSalt}_${Date.now()}`;
+                const salt = ethers.utils.keccak256(ethers.utils.toUtf8Bytes(saltString));
+                
+                console.log('Generated salt:', salt);
+                console.log('Random component:', randomSalt);
+                
+                // Connect to factory
+                const factory = new ethers.Contract(FACTORY_ADDRESS, FACTORY_ABI, signer);
+                
+                // Get deployment fee
+                const deploymentFee = await factory.deploymentFee();
+                console.log('Deployment fee:', ethers.utils.formatEther(deploymentFee), 'BDAG');
+                
+                // Predict wallet address
+                const expectedWallet = await factory.predictWalletAddress(account, salt);
+                console.log('Expected wallet:', expectedWallet);
+                
+                updateStatus(`Deploying smart wallet... Expected address: ${expectedWallet}`, 'warning');
+                
+                // Deploy with high gas price for faster confirmation
+                const gasPrice = await web3Provider.getGasPrice();
+                const highGasPrice = gasPrice.mul(150).div(100); // 1.5x gas price
+                
+                const tx = await factory.deployWallet(guardians, salt, {
+                    value: deploymentFee,
+                    gasLimit: 3000000,
+                    gasPrice: highGasPrice
+                });
+                
+                updateStatus(`✅ Transaction submitted! Hash: ${tx.hash}`, 'success');
+                
+                // Add to pending list
+                PENDING_DEPLOYMENTS.push({
+                    name: "MetaMask Deployment",
+                    txHash: tx.hash,
+                    expectedWallet: expectedWallet,
+                    gasPrice: ethers.utils.formatUnits(highGasPrice, "gwei") + " gwei"
+                });
+                
+                displayPendingTransactions();
+                
+                // Wait for confirmation
+                updateStatus('Waiting for transaction confirmation...', 'info');
+                const receipt = await tx.wait();
+                
+                if (receipt.status === 1) {
+                    updateStatus(`🎉 Smart Wallet Deployed Successfully!`, 'success');
+                    
+                    document.getElementById('deploymentResult').style.display = 'block';
+                    document.getElementById('resultContent').innerHTML = `
+                        <div class="address">
+                            <strong>📍 Your Smart Wallet:</strong><br>
+                            ${expectedWallet}
+                        </div>
+                        <br>
+                        <div class="address">
+                            <strong>🔗 Transaction:</strong><br>
+                            ${tx.hash}
+                        </div>
+                        <br>
+                        <div>
+                            <strong>⛽ Gas Used:</strong> ${receipt.gasUsed.toString()}<br>
+                            <strong>📦 Block:</strong> ${receipt.blockNumber}
+                        </div>
+                    `;
+                } else {
+                    updateStatus('❌ Transaction failed', 'error');
+                }
+                
+            } catch (error) {
+                updateStatus(`❌ Deployment error: ${error.message}`, 'error');
+            }
+        }
+        
+        async function checkPendingDeployments() {
+            updateStatus('Checking pending deployments...', 'info');
+            
+            let successfulWallet = null;
+            const pendingList = document.getElementById('pendingList');
+            pendingList.innerHTML = '';
+            
+            for (let deployment of PENDING_DEPLOYMENTS) {
+                const div = document.createElement('div');
+                div.className = 'pending-tx';
+                
+                try {
+                    const receipt = await web3Provider.getTransactionReceipt(deployment.txHash);
+                    
+                    if (receipt) {
+                        if (receipt.status === 1) {
+                            div.innerHTML = `
+                                <strong>✅ ${deployment.name}</strong><br>
+                                Hash: ${deployment.txHash}<br>
+                                Expected Wallet: ${deployment.expectedWallet}<br>
+                                Status: <span style="color: #4CAF50;">SUCCESS</span><br>
+                                Block: ${receipt.blockNumber}
+                            `;
+                            
+                            if (deployment.expectedWallet !== "Unknown") {
+                                successfulWallet = deployment.expectedWallet;
+                            }
+                        } else {
+                            div.innerHTML = `
+                                <strong>❌ ${deployment.name}</strong><br>
+                                Hash: ${deployment.txHash}<br>
+                                Status: <span style="color: #f44336;">FAILED</span>
+                            `;
+                        }
+                    } else {
+                        div.innerHTML = `
+                            <strong>⏳ ${deployment.name}</strong><br>
+                            Hash: ${deployment.txHash}<br>
+                            Expected Wallet: ${deployment.expectedWallet}<br>
+                            Status: <span style="color: #FF9800;">PENDING</span><br>
+                            Gas Price: ${deployment.gasPrice}
+                        `;
+                    }
+                } catch (error) {
+                    div.innerHTML = `
+                        <strong>❓ ${deployment.name}</strong><br>
+                        Hash: ${deployment.txHash}<br>
+                        Status: <span style="color: #9E9E9E;">ERROR CHECKING</span>
+                    `;
+                }
+                
+                pendingList.appendChild(div);
+            }
+            
+            document.getElementById('pendingTransactions').style.display = 'block';
+            
+            if (successfulWallet) {
+                updateStatus(`🎉 SUCCESS! Smart wallet found: ${successfulWallet}`, 'success');
+                
+                document.getElementById('deploymentResult').style.display = 'block';
+                document.getElementById('resultContent').innerHTML = `
+                    <div class="address">
+                        <strong>🎯 YOUR SMART WALLET IS READY!</strong><br>
+                        ${successfulWallet}
+                    </div>
+                `;
+            } else {
+                updateStatus('⏳ All transactions still pending. Network congestion detected.', 'warning');
+            }
+        }
+        
+        function displayPendingTransactions() {
+            const pendingList = document.getElementById('pendingList');
+            pendingList.innerHTML = '';
+            
+            PENDING_DEPLOYMENTS.forEach(deployment => {
+                const div = document.createElement('div');
+                div.className = 'pending-tx';
+                div.innerHTML = `
+                    <strong>⏳ ${deployment.name}</strong><br>
+                    Hash: ${deployment.txHash}<br>
+                    Expected Wallet: ${deployment.expectedWallet}<br>
+                    Gas Price: ${deployment.gasPrice}
+                `;
+                pendingList.appendChild(div);
+            });
+            
+            document.getElementById('pendingTransactions').style.display = 'block';
+        }
+        
+        function updateStatus(message, type) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            statusEl.className = `status ${type}`;
+        }
+        
+        // Load ethers.js
+        const script = document.createElement('script');
+        script.src = 'https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js';
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
