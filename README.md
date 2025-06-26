@@ -1,6 +1,6 @@
 # 🚀 Blockchain Smart Wallet with Social Recovery
 
-**Gasless Transactions • Social Recovery • Production Ready**
+**Gasless Transactions • Social Recovery • Scalable Backend System Design**
 
 A full-stack, EVM-compatible smart wallet with gasless meta-transactions and social recovery, built for the BlockDAG Primordial Testnet.
 
@@ -15,12 +15,12 @@ A full-stack, EVM-compatible smart wallet with gasless meta-transactions and soc
 - **Gas Efficient**: Minimal proxy pattern saves 90% deployment costs
 - **Modular**: Clean architecture with upgrade hooks
 
-### 🖥️ Backend Services
-- **Relayer**: Automatic transaction relay with signature verification
-- **Database**: SQLite with user management and transaction history
-- **Security**: Rate limiting, input validation, CORS, security headers
-- **API**: RESTful endpoints with comprehensive error handling
-- **Monitoring**: Health checks, logging, and analytics
+### 🖥️ Backend Services (Node.js, Express.js, SQL, REST API, system design)
+- **Relayer:** Node.js service to securely verify EIP-712 signatures and relay gasless transactions  
+- **Database:** SQLite for user accounts and transaction history, structured for easy migration to MySQL  
+- **API:** RESTful endpoints built with Express.js, featuring modular routes, input validation, and error handling  
+- **Security:** Rate limiting, CORS, security headers, and request sanitization to protect APIs  
+- **Monitoring:** Health checks, logging, analytics, and basic caching for improved performance  
 
 ### 🌐 Frontend Application
 - **Modern UI**: React 18 + Tailwind CSS + Framer Motion
@@ -117,6 +117,12 @@ cd frontend
 npm run build
 # Build successful ✅
 ```
+
+## 🛠️ Tech Stack
+- **Backend:** Node.js, Express.js, SQLite (MySQL-ready), REST APIs
+- **Frontend:** React 18, Tailwind CSS, Framer Motion
+- **Smart Contracts:** Solidity, Hardhat
+- **Design:** Modular architecture, scalable API + DB layers, relayer separation
 
 ## 🏆 Awards Potential
 
