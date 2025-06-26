@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 BlockDAG Smart Wallet
 
 **Gasless Transactions • Social Recovery • Production Ready**
@@ -137,3 +138,6 @@ This project demonstrates:
 **Built with ❤️ for the BlockDAG Hackathon**
 
 [View Live Demo](http://localhost:3000) • [Deployment Guide](./DEPLOYMENT.md) • [Project Status](./PROJECT_STATUS.md)
+=======
+# Aetheram-Social_Wallet
+>>>>>>> dfd6efd90f0485d75085d19e6669ffbebb7b71f1
