@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# 🚀 BlockDAG Smart Wallet
+# 🚀 Blockchain Smart Wallet with Social Recovery
 
 **Gasless Transactions • Social Recovery • Production Ready**
 
@@ -128,16 +127,6 @@ This project demonstrates:
 - **🥇 Completeness**: Full-stack implementation with documentation
 - **🥇 BlockDAG Integration**: Native testnet deployment
 
-## 📞 Support
-
-- **GitHub Issues**: Bug reports and feature requests
-- **Discord**: BlockDAG Community Server
-
 ---
 
-**Built with ❤️ for the BlockDAG Hackathon**
-
-[View Live Demo](http://localhost:3000) • [Deployment Guide](./DEPLOYMENT.md) • [Project Status](./PROJECT_STATUS.md)
-=======
-# Aetheram-Social_Wallet
->>>>>>> dfd6efd90f0485d75085d19e6669ffbebb7b71f1
+**Built for the BlockDAG Hackathon**
